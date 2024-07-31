@@ -120,4 +120,4 @@ class tabel_perempuan():
 
 if __name__ == '__main__':
     df = tabel_laki()
-    print(df.tabel().shape)
+    print(df.tabel().head(3))
