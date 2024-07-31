@@ -4,7 +4,7 @@ import re
 class tabel_laki():
 
     def __init__(self) -> None:
-        df = pd.read_csv('.\Persentase penduduk usia 25 Tahun keatas dengan pendidikan SMA .csv')
+        df = pd.read_csv('./Persentase penduduk usia 25 Tahun keatas dengan pendidikan SMA .csv')
         df_new = df.copy().iloc[3:,:].reset_index().iloc[:,1:8]
 
         df_laki = df_new.iloc[:,0:4]
@@ -64,7 +64,7 @@ class tabel_laki():
 class tabel_perempuan():
 
     def __init__(self) -> None:
-        df = pd.read_csv('.\Persentase penduduk usia 25 Tahun keatas dengan pendidikan SMA .csv')
+        df = pd.read_csv('./Persentase penduduk usia 25 Tahun keatas dengan pendidikan SMA .csv')
         df_new = df.copy().iloc[3:,:].reset_index().iloc[:,1:8]
 
         df_perempuan = df_new.iloc[:,[0,4,5,6]]
